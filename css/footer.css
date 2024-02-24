@@ -1,0 +1,58 @@
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.bottom .btn-row {
+    width: 50%;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .btn-row h4 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.bottom .btn-row h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom .brand {
+    display: flex;
+}
+
+.bottom .brand h1 {
+    font-family: "Revue", sans-serif;
+    font-size: 35px;
+}
+
+.bottom .socials {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.socials a svg {
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    color: white;
+    padding-left: 20px;
+}
+
+.btn-row p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 8px;
+}

@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>The Room</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/resize.css">
     <link rel="shortcut icon" href="img/logo.png">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -15,19 +22,18 @@
         <title>THE ROOM</title>
     </head>
 
-    <body
-        onload="AddCarouselButtons(); CheckSizeAttributes(); AddCards(); MakeJumbotron(); CheckCards(); ResizeHeader();"
-        onscroll="ScrollFunction();" onresize="CheckSizeAttributes(); CheckCards(); MakeJumbotron(); ResizeHeader();">
-        <!-- <div class="loader"></div> -->
+    <body onload="MakeJumbotron(); ResizeHeader();" onscroll="ScrollFunction();"
+        onresize="MakeJumbotron(); ResizeHeader();">
         <div class="content">
             <div class="header">
-                <div class="brand">
-                    <!-- <h1 class="red">ROOM</h1> -->
-                    <img src="img/logo.png" alt="Tommy Wiseau Graphic Icon">
-                    <h1 class="red">THE ROOM</h1>
-                </div>
+                <a href="./index.html">
+                    <div class="brand">
+                        <img src="img/logo.png" alt="Tommy Wiseau Graphic Icon">
+                        <h1 class="red">THE ROOM</h1>
+                    </div>
+                </a>
                 <div class="main-nav">
-                    <a href="/" class="button-container">
+                    <a onclick="SmoothScroll('top');" class="button-container">
                         <h2>HOME</h2>
                     </a>
                     <a onclick="SmoothScroll('synopsis');" class="button-container">
@@ -48,7 +54,7 @@
                 </div>
                 <div class="right-nav"></div>
             </div>
-            <div class="top">
+            <div class="top" id="top">
                 <div class="image-container">
                     <div class="title">
                         <h1>THE ROOM</h1>
@@ -71,7 +77,7 @@
                                     d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
                             </svg>
                         </div>
-                        <div class="queue" onclick="ToggleWatchLater('Interstellar');">
+                        <div class="tour">
                             <h3>Tour Tickets</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                 <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"
@@ -86,8 +92,174 @@
 
                 <div class="content-area" id="clips">
                     <h2 class="content-title">CLIPS</h2>
-                    <div class="card-carousel">
-                    </div>
+
+                    <section class="swiper-container loading">
+
+                        <div class="swiper-wrapper">
+                            <!-- Begin Slide -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+                                    <!-- YouTube iFrame Embed  -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/9-dIdFXeFhs?si=4soFn3cUmE_fnxny"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!--  Video Poster - in the form of a button to make it keyboard accessible -->
+
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/9-dIdFXeFhs/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slide-caption">The Room (2003) - Trailer</div>
+                            </div>
+
+                            <!-- BEGIN SLIDE -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+                                    <!-- YouTube iframe. Embed -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/CJsV5GTWSsw?si=PmvH45LqM6ucupUO"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/CJsV5GTWSsw/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Slide Caption -->
+                                <div class="slide-caption">Highlight Reel</div>
+                                <!-- // End Slide Container -->
+                            </div>
+                            <!-- // END  SLIDE -->
+
+                            <!-- BEGIN SLIDE -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+
+                                    <!-- YouTube iFrame.Embed  -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/pKAwXLVxuZQ?si=Q4FwS-SghVI243vg"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/pKAwXLVxuZQ/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Slide Caption -->
+                                <div class="slide-caption">The Room | Best Moments</div>
+                                <!-- // End Slide Container -->
+                            </div>
+                            <!-- // END  SLIDE -->
+
+                            <!-- BEGIN SLIDE -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+
+                                    <!-- YouTube iFrame.Embed  -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/aekfPU0SwNw?si=rVy7YgbZlf6IhPeW"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/aekfPU0SwNw/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Slide Caption -->
+                                <div class="slide-caption">Oh Hi Mark!
+                                </div>
+                                <!-- // End Slide Container -->
+                            </div>
+                            <!-- // END  SLIDE -->
+
+                            <!-- BEGIN SLIDE -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+
+                                    <!-- YouTube iFrame.Embed  -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/ptmM-m7Cl8U?si=rhM834rjtURaEJNn"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/ptmM-m7Cl8U/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Slide Caption -->
+                                <div class="slide-caption">You're Tearing Me Apart, Lisa!</div>
+                                <!-- // End Slide Container -->
+                            </div>
+                            <!-- // END  SLIDE -->
+                            <!-- BEGIN SLIDE -->
+                            <div class="swiper-slide">
+                                <div class="videoWrapper js-videoWrapper">
+
+                                    <!-- YouTube iFrame.Embed  -->
+
+                                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0"
+                                        allowTransparency="true" allowfullscreen
+                                        data-src="https://www.youtube.com/embed/KIkoXhgtI58?si=WxzpCNvuvzrj5PpG"
+                                        allow="autoplay; fullscreen"></iframe>
+                                    <!-- Poster frame in the form of a button to make it keyboard accessible. Background is Youtube Image  -->
+                                    <button class="videoPoster js-videoPoster"
+                                        style="background-image:url(https://img.youtube.com/vi/KIkoXhgtI58/maxresdefault.jpg);">
+                                        <svg class="play-vid" viewBox="0 0 100 100">
+                                            <path class="circle" fill="rgba(212, 44, 44, 1)" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+                         C97.3,23.7,75.7,2.3,49.9,2.5" />
+                                            <path class="vid-icon" fill="white"
+                                                d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Slide Caption -->
+                                <div class="slide-caption">Flower Shop Scene</div>
+                                <!-- // End Slide Container -->
+                            </div>
+                            <!-- // END  SLIDE -->
+
+                        </div>
+                        <!-- Navigation Arrows -->
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                    </section>
                 </div>
 
 
@@ -114,8 +286,7 @@
                     </div>
                     <div class="socials">
                         <a href="https://twitter.com/theroom?lang=en" target="_blank">
-                            <svg fill="currentColor" viewBox="0 0 16 16"
-                                alt="twitter">
+                            <svg fill="currentColor" viewBox="0 0 16 16" alt="twitter">
                                 <path
                                     d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                             </svg></a>
@@ -138,8 +309,10 @@
     </body>
 
     </html>
-    <script src="./script.js"></script>
-    <script></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/slide.js"></script>
 
 </body>
 

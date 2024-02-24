@@ -1,0 +1,212 @@
+@media screen and (max-width: 1660px) {
+    .mid p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .top h1 {
+        font-size: 120px;
+    }
+
+    .mid h3,
+    .mid p {
+        font-size: 22px;
+    }
+
+    .watch svg,
+    .tour svg,
+    .mail-area svg {
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+    }
+
+    .mid .watch,
+    .mid .tour {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1230px) {
+    .main-nav .button-container h2 {
+        font-size: 20px;
+    }
+
+    .right-nav .button-container h2 {
+        font-size: 16px;
+    }
+
+    .content-area .content-title,
+    .mid p {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .top .title {
+        padding-left: 6%;
+        padding-right: 6%;
+        /* width: 45%; */
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .top h1 {
+        font-size: 100px;
+    }
+
+    .mid h3,
+    .mid p {
+        font-size: 20px;
+    }
+
+    .content-area .content-title {
+        font-size: 28px;
+    }
+
+    .mid {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header .brand h1 {
+        font-size: 30px;
+    }
+
+    .main-nav .button-container h2 {
+        font-size: 16px;
+    }
+
+    .right-nav .button-container h2 {
+        font-size: 12px;
+    }
+
+    .main-nav {
+        margin-left: 30px;
+    }
+
+    .popup {
+        padding: 0px;
+        height: 100%;
+    }
+
+    .modal-content {
+        max-width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 815px) {
+    .header {
+        min-height: 70px;
+        height: auto;
+    }
+
+    .mid h3,
+    .mid p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 737px) {
+
+    .mail-area .input-area {
+        width: 70%;
+    }
+
+    .mid .mail-area {
+        height: 250px;
+    }
+
+    .content-area .content-title,
+    .mid p {
+        padding-left: 0px;
+    }
+
+    .bottom .btn-row {
+        width: 95%;
+    }
+
+    .socials a svg {
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    
+
+    .mail-area-content h2 {
+        font-size: 25px;
+    }
+
+    .mail-area-content p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .top .image-container {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .top h1 {
+        font-size: 50px;
+    }
+
+    .mid h3,
+    .mid p {
+        font-size: 15px;
+    }
+
+    .mid p {
+        padding: 15px 0px;
+    }
+
+    .mid {
+        padding: 20px;
+    }
+
+    .socials a svg {
+        width: 40px;
+        height: 40px;
+        max-width: 40px;
+    }
+
+}
+
+@media screen and (max-width: 545px) {
+    
+    .desc-top h3 {
+        font-size: 14px;
+    }
+
+    .desc-top svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .desc-mid p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .btn-row {
+        flex-direction: column;
+    }
+
+    .socials svg {
+        padding: 0px 10px;
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+    }
+}
