@@ -72,6 +72,10 @@ const ResizeHeader = () => {
     }
 };
 
+const Load = () => {
+    document.querySelector('.loader').style.display = "none";
+}
+
 const ScrollFunction = () => {
     let header = document.getElementsByClassName("header")[0];
     if (document.documentElement.scrollTop > 1) {

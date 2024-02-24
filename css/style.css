@@ -8,6 +8,27 @@
     --red-selected: rgba(170, 35, 35, 0.9);
 }
 
+.loader {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-text {
+    position: absolute;
+    font-size: 10vmax;
+    width: fit-content;
+    font-family: 'Revue', sans-serif;
+    color: white;
+}
+
 
 html,
 body {
@@ -191,5 +212,3 @@ a {
     border-radius: 50px;
     margin-top: 50px;
 }
-
-
