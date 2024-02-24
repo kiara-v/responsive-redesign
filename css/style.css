@@ -162,6 +162,7 @@ a {
     background-image: url("https://thespool.net/wp-content/uploads/2023/06/room2.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mail-area .mail-area-content {
