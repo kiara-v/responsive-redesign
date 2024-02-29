@@ -92,17 +92,21 @@ hamburger.addEventListener('click', ()=>{
 
 const Load = () => {
     document.querySelector('.loader').style.display = "none";
-    console.log(window.innerWidth);
 }
 
 const ScrollFunction = () => {
     let header = document.getElementsByClassName("header")[0];
     if (document.documentElement.scrollTop >= 1) {
+        header.style.backgroundColor = "black";
+        header.style.boxShadow = "0px 2px 10px black";
         header.classList.add("nav-active");
     } else {
+        header.style.backgroundColor = "transparent";
+        header.style.boxShadow = "none";
         header.classList.remove("nav-active");
     }
 };
+
 
 const MakeJumbotron = () => {
     let height =
