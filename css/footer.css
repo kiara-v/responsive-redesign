@@ -19,7 +19,7 @@
 
 .bottom .btn-row h4 {
     color: white;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 12px;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .bottom .brand h1 {
-    font-family: "Revue", sans-serif;
+    /* font-family: "Revue", sans-serif; */
     font-size: 35px;
 }
 
@@ -53,6 +53,6 @@
 
 .btn-row p {
     color: white;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 8px;
 }
