@@ -1,27 +1,30 @@
-const IsMobile = () => {
-    let width =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.getElementsByTagName("body")[0].clientWidth;
+// const IsMobile = () => {
+//     let width =
+//         window.innerWidth ||
+//         document.documentElement.clientWidth ||
+//         document.getElementsByTagName("body")[0].clientWidth;
+//         console
 
-    if (width <= 736) {
-        return true;
-    } else {
-        return false;
-    }
-};
+//     if (width <= 736) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
 
 const ResizeHeader = () => {
     let width =
         window.innerWidth ||
         document.documentElement.clientWidth ||
         document.getElementsByTagName("body")[0].clientWidth;
+        console.log(width);
 
-    if (width <= 815) {
+    if (width <= 815 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // console.log("here");
         if (document.getElementsByClassName("hamburger").length <= 0) {
             let header = document.getElementsByClassName("header")[0];
             let main_nav = header.getElementsByClassName("main-nav")[0];
-            let right_nav = header.getElementsByClassName("right-nav")[0];
+            // let right_nav = header.getElementsByClassName("right-nav")[0];
 
             let hamburger = document.createElement("div");
             hamburger.classList.add("hamburger");
@@ -29,11 +32,11 @@ const ResizeHeader = () => {
   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
 </svg>`;
             main_nav.remove();
-            right_nav.remove();
+            // right_nav.remove();
 
             let bottom_header = document.createElement("div");
             bottom_header.classList.add("header-bottom");
-            bottom_header.append(main_nav, right_nav);
+            bottom_header.append(main_nav);
             bottom_header.style.display = "none";
 
             hamburger.addEventListener("click", function () {
@@ -61,13 +64,13 @@ const ResizeHeader = () => {
         if (document.getElementsByClassName("hamburger").length > 0) {
             let header = document.getElementsByClassName("header")[0];
             let main_nav = header.getElementsByClassName("main-nav")[0];
-            let right_nav = header.getElementsByClassName("right-nav")[0];
+            // let right_nav = header.getElementsByClassName("right-nav")[0];
             let brand = header.getElementsByClassName("brand")[0];
 
             header.classList.remove("header-change");
             header.children[0].remove();
             header.children[0].remove();
-            header.append(brand, main_nav, right_nav);
+            header.append(brand, main_nav);
         }
     }
 };

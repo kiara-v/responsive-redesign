@@ -1,13 +1,13 @@
-@media screen and (max-width: 1660px) {
+/* @media screen and (max-width: 1660px) {
     .mid p {
         font-size: 25px;
     }
-}
+} */
 
 @media screen and (max-width: 1330px) {
-    .top h1 {
+    /* .top h1 {
         font-size: 120px;
-    }
+    } */
 
     .mid h3,
     .mid p {
@@ -53,9 +53,9 @@
 }
 
 @media screen and (max-width: 1045px) {
-    .top h1 {
+    /* .top h1 {
         font-size: 100px;
-    }
+    } */
 
     .mid h3,
     .mid p {
@@ -157,9 +157,9 @@
 
     }
 
-    .top h1 {
+    /* .top h1 {
         font-size: 50px;
-    }
+    } */
 
     .mid h3,
     .mid p {
