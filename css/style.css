@@ -93,11 +93,12 @@ a {
     display: flex;
     font-family: "Roboto", sans-serif;
     justify-content: center;
+    text-align: center;
 }
 
 .button-section svg {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     min-width: 25px;
     padding-left: 10px;
     padding-right: 10px;

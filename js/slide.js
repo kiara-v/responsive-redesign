@@ -56,7 +56,7 @@ mySwiper.init();
 $(document).on("click", ".js-videoPoster", function (ev) {
   "use strict";
   ev.preventDefault();
-  videoStop();
+  // videoStop();
   var $poster = $(this);
   var $wrapper = $poster.closest(".js-videoWrapper");
   videoPlay($wrapper);

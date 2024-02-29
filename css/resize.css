@@ -17,8 +17,8 @@
     .watch svg,
     .tour svg,
     .mail-area svg {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         min-width: 20px;
     }
 
@@ -101,6 +101,9 @@
 
 
 @media screen and (max-width: 815px) {
+    .top {
+        /* background-image: url("../img/poster.png"); */
+    }
     .header {
         min-height: 70px;
         height: auto;

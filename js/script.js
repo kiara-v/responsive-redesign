@@ -92,6 +92,7 @@ hamburger.addEventListener('click', ()=>{
 
 const Load = () => {
     document.querySelector('.loader').style.display = "none";
+    console.log(window.innerWidth);
 }
 
 const ScrollFunction = () => {
