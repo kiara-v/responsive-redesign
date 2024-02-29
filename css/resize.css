@@ -213,3 +213,12 @@
         max-width: 50px;
     }
 }
+
+
+
+@media only screen and (orientation: landscape) {
+    body {
+        width: 100%;
+        background-color: black;
+    }
+}
