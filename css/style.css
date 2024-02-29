@@ -48,6 +48,7 @@ h5,
 h4 {
     margin: 0px;
     font-family: "Revue", sans-serif;
+    letter-spacing: 1px;
 }
 
 p {
@@ -186,7 +187,7 @@ a {
 
 .mail-area h2 {
     /* font-family: "Revue", sans-serif; */
-    letter-spacing: 5px;
+    /* letter-spacing: 1px; */
     color: white;
     font-size: 55px;
 }
