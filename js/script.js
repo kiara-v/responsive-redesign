@@ -97,7 +97,7 @@ const Load = () => {
 
 const ScrollFunction = () => {
     let header = document.getElementsByClassName("header")[0];
-    if (document.documentElement.scrollTop > 1) {
+    if (document.documentElement.scrollTop >= 1) {
         header.classList.add("nav-active");
     } else {
         header.classList.remove("nav-active");

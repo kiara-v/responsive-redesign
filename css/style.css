@@ -189,6 +189,7 @@ a {
     font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 30px;
+    text-align: center;
 }
 
 .mail-area input {
@@ -198,7 +199,7 @@ a {
     height: 50px;
     padding: 4px 25px;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .mail-area svg {

@@ -101,9 +101,6 @@
 
 
 @media screen and (max-width: 815px) {
-    .top {
-        /* background-image: url("../img/poster.png"); */
-    }
     .header {
         min-height: 70px;
         height: auto;
@@ -147,10 +144,6 @@
     .mail-area-content h2 {
         font-size: 25px;
     }
-
-    .mail-area-content p {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 610px) {
@@ -166,7 +159,7 @@
 
     .mid h3,
     .mid p {
-        font-size: 15px;
+        font-size: 19px;
     }
 
     .mid p {
@@ -174,7 +167,7 @@
     }
 
     .mid {
-        padding: 20px;
+        padding: 30px;
     }
 
     .socials a svg {
@@ -202,6 +195,9 @@
 }
 
 @media screen and (max-width: 460px) {
+    .top {
+        background-image: url("../img/poster.png");
+    }
     .btn-row {
         flex-direction: column;
     }

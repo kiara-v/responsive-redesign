@@ -17,10 +17,6 @@ var sliderSelector = ".swiper-container",
     },
     grabCursor: true,
     parallax: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false
-    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
@@ -30,7 +26,7 @@ var sliderSelector = ".swiper-container",
       onlyInViewport: false
     },
     breakpoints: {
-      1023: {
+      800: {
         slidesPerView: 1,
         spaceBetween: 0
       }
