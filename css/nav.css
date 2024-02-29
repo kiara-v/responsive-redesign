@@ -61,7 +61,7 @@ nav:hover {
     transition: border-bottom-color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-links li a:hover, .logo a:hover {
     /* color: #61DAFB; */
     cursor: pointer;
     border-bottom-color: var(--red);
