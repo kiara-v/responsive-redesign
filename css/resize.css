@@ -217,7 +217,7 @@
 
 
 @media only screen and (orientation: landscape) {
-    body {
+    body, .top, .image-container {
         width: 100%;
         background-color: black;
     }
