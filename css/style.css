@@ -215,6 +215,7 @@ a {
     min-width: 30px;
     padding: 5px 25px;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .mail-area .input-area {
